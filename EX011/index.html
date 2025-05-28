@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho da janela de seu navegador para ver a função em funcionamento</p>
+    <picture>
+        <source media="(max-width: 795px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível"></picture>
+<h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a Reproduzir Áudios em HTML5.</p> 
+        <audio source src="midia/guanacast-33.mp3" controls auto type="audio/mp3"></audio>
+            
+    
+<h1>adicionando videos internos</h1>
+        <p>Esse video esta hospedado no meu prorpio servidor</p>
+<video width="500" poster="imagens/capa do video.jpg" controls auto loop> 
+    <source src="videos/videos convertidos/Salada De Fruta 25 Fps.mp4">
+    <source src="videos/videos convertidos/Salada De Fruta 25 Fps.mkv">
+    <source src="videos/videos convertidos/Salada De Fruta 25 Fps.webm">
+    <p>Seu navegador não tem compatibilidade com o reprodutor de videos</p>
+</video>
+<!-- o processo é bem parecido com as demais formas de adicionar midias-->
+
+<h1>adicionando Videos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=dgrP8WlF0zYq_jvl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
