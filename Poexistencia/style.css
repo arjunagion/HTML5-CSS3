@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+:root {
+--cor0: #EB0071;
+--cor1: #6B1F44;
+--cor2: #17CFEB;
+--cor3: #1D616B;
+--cor4: #EBD317;
+--cor5: #998D2F; 
+
+--fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+--fonte-destaque: "Bebas Neue", sans-serif;
+--fonte-cabeçalho: "fascinate-inline-regular", sans-serif;
+
+}
+
+nav {
+    background-color:var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.582);
+}
+
+body{
+    background: black url(imagens/imagem04.jpg); top center no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+        background-color: white;
+        max-width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    h1 {
+        background-color: white;
+        max-width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
