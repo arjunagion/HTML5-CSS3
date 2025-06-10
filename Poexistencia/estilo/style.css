@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+* {
+
+    margin: 0%;
+    padding: 0%;
+    font-size: 1em;
+
+}
+
+:root {
+
+    --fonte1: verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passero One", sans-serif; 
+    --fonte3: "Lobster", sans-serif;  
+    --fonte4: "Slackey", sans-serif;
+}
+
+html, body {
+
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+
+}
+
+header {
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    background-image: url(../imagens/imagem08.png);
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+header > h1 {
+
+    background-color: black;
+    border-radius: 15px;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3vw;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+header > h2 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 2vw;
+    color: black;
+}
+
+header > p {
+
+    padding-bottom: 50px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
+
+
+} 
+
+header a, footer a {
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+
+header a:hover, footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+nav{
+
+    font-family: var(--fonte2);
+    background-color: black;
+    color: white;
+    padding: 50px;
+    
+
+}
+
+nav a, footer a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 2em;
+    padding: 15px;
+
+}
+
+nav a:hover, footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+section {
+    font-family: var(--fonte4);
+    padding: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.3vw;
+
+}
+
+section.normal > h2 {
+    font-family: var(--fonte3);
+    font-size: 2em;
+    padding-bottom: 80px;
+}
+
+section > p {
+
+    padding-bottom: 3em;
+}
+
+section.normal {
+
+    background-color: white;
+    color: black;
+
+}
+ 
+section.imagem {
+
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section.imagem > p {
+
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section#imagem01 {
+
+    background-image: url(../imagens/imagem01.jpg);
+    background-position: right center;
+    
+
+}
+
+section#imagem02 {
+
+    background-image: url(../imagens/imagem05.jpg);
+    background-position: right bottom;
+    
+
+}
+
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}

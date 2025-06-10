@@ -1,51 +1,171 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 * {
-margin: 0px;
-padding: 0px;
+
+    margin: 0%;
+    padding: 0%;
+    font-size: 1em;
+
 }
 
 :root {
---cor0: #EB0071;
---cor1: #6B1F44;
---cor2: #17CFEB;
---cor3: #1D616B;
---cor4: #EBD317;
---cor5: #998D2F; 
 
---fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
---fonte-destaque: "Bebas Neue", sans-serif;
---fonte-cabeçalho: "fascinate-inline-regular", sans-serif;
+    --fonte1: verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passero One", sans-serif; 
+    --fonte3: "Lobster", sans-serif;  
+    --fonte4: "Slackey", sans-serif;
+}
+
+html, body {
+
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 
-nav {
-    background-color:var(--cor4);
-    padding: 10px;
-    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.582);
+nav{
+
+    font-family: var(--fonte2);
+    background-color: black;
+    color: white;
+    padding: 50px;
+    
+
 }
 
-body{
-    background: black url(imagens/imagem04.jpg); top center no-repeat fixed;
+header {
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+header > h1 {
+
+    padding-top: 140px;
+    padding-bottom: 140px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
+    
+
+}
+
+header > p {
+
+    padding-bottom: 50px;
+    font-family: var(--fonte3);
+    font-size: 1.1em;
+
+} 
+
+nav a, footer a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 2em;
+    padding: 15px;
+
+}
+
+nav a:hover, footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+section {
+    font-family: var(--fonte4);
+    padding: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+    padding-left: 130px;
+    font-size: 2.8vw;
+
+}
+
+section > h2 {
+    
+    font-family: var(--fonte2);
+    text-shadow: 5px 5px 0px black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    
+}
+
+section > p {
+
+    padding-bottom: 3em;
+}
+
+section.normal {
+
+    background-color: white;
+    color: black;
+
+}
+ 
+section.imagem {
+
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
     background-size: cover;
+    background-attachment: fixed;
+
 }
 
-main {
-        background-color: white;
-        max-width: 400px;
-        padding: 10px;
-        margin: auto;
-        border: 1px solid black;
-        border-radius: 15px;
-    }
+section.imagem > p {
 
-    h1 {
-        background-color: white;
-        max-width: 400px;
-        padding: 10px;
-        margin: auto;
-        border: 1px solid black;
-        border-radius: 15px;
-    }
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 0px black;
+
+}
+
+
+
+section#imagem01 {
+
+    background-image: url(../Poexistencia/imagens/imagem07.jpg);
+    background-position: right center;
+    
+
+}
+
+section#imagem02 {
+
+    background-image: url(../Poexistencia/imagens/imagem08.png);
+    background-position: center bottom;
+    
+
+}
+
+
+
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
