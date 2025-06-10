@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 * {
 
     margin: 0%;
@@ -16,7 +17,7 @@
 
 :root {
 
-    --cor01: #C9DB21;
+    --cor01: #dbd821;
     --cor02: #838A41;
     --cor03: #37382B;
     --cor04: #8B21DB;
@@ -27,6 +28,7 @@
     --fonte2: "Passero One", sans-serif; 
     --fonte3: "Lobster", sans-serif;  
     --fonte4: "Slackey", sans-serif;
+    --fonte6: "Fugaz One", sans-serif;
 }
 
 body {
@@ -37,12 +39,14 @@ background-color: var(--cor03);
 
 header {
 
+    
     background-color: var(--cor05);
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    color: var(--cor01);
+    padding-top:80px;
+    padding-bottom: 80px;
     text-align: center;
     font-size: 2em;
+    
 
 }
 
@@ -63,13 +67,14 @@ nav {
     padding-bottom: 20px;
     font-weight: bolder;
     font-size: 1.5em;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 10px 10px;
     
 
 }
 
 section > h2 {
 
+    font-size: 2em;
     font-family: var(--fonte2);
     background-color: antiquewhite;
     padding-top: 20px;
@@ -80,9 +85,10 @@ section > h2 {
 
 section > ul > li {
 
-    font-family: var(--fonte2);
+    font-family: var(--fonte6);
     font-size: 2em;
-    background-color: rgb(20, 140, 145);
+    background-color: var(--cor04);
+    color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center
@@ -91,12 +97,14 @@ section > ul > li {
 
 section > p {
 
-font-family: var(--fonte3);
-background-color: rgb(163, 99, 15);
+    font-size: 1.3em;
+    font-family: var(--fonte6);
+    color: white;
+    background-color: var(--cor06);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center
-
+    
 }
 
 
@@ -106,7 +114,7 @@ header > h1 {
     
     font-family: var(--fonte2);
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 50x;
     font-size: 3vw;
     text-align: center; 
 
