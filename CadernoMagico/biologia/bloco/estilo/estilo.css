@@ -1,4 +1,4 @@
-/*@charset "UTF-8";
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -34,26 +34,23 @@ body {
     min-height: 100vh;
 }
 
-/* Cabeçalho */
 header {
     background-color: var(--cor05);
     background-image: url(../imagens/capa.png);
-    background-size: 400px;
-    background-position: right bottom;
+    background-size: 800px;
+    background-position: top center;
     background-attachment: fixed;
     color: var(--cor01);
     padding: 80px 20px;
     text-align: center;
     text-shadow: 5px 1px 0px black;
-
 }
 
 header > h1 {
     font-family: var(--fonte2);
-    font-size: 8vw;
+    font-size: 4.8vw;
 }
 
-/* Navegação */
 nav {
     background-color: var(--cor01);
     padding: 20px;
@@ -61,7 +58,6 @@ nav {
     font-family: var(--fonte2);
     font-size: 1.8em;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav > a {
@@ -71,6 +67,7 @@ nav > a {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 nav > a:hover {
@@ -79,7 +76,6 @@ nav > a:hover {
     border-radius: 5px;
 }
 
-/* Bloco explicativo */
 section > p {
     font-size: 1.8em;
     font-family: var(--fonte6);
@@ -90,10 +86,28 @@ section > p {
     box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.377);
 }
 
-/* Seção de tópicos */
-section.imagem {
+article > h3 {
+    text-align: left;
+    font-size: 3em;
+    font-family: var(--fonte6);
+    color: var(--cor01);
+    background-color: var(--cor04);
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+p.conteudo {
+    text-align: left;
+    font-size: 1.8em;
+    font-family: var(--fonte6);
+    color: white;
+    background-color: var(--cor06);
     padding: 40px 20px;
-    padding-bottom: 300px;
+    transition: background-color 0.3s;
+}
+
+section.imagem {
+    padding: 40px 20px 350px 20px;
     background-image: url(../imagens/section.png);
     background-size: 300px;
     background-position: right bottom;
@@ -108,28 +122,20 @@ section.imagem h2 {
     padding: 20px;
     text-align: center;
     text-shadow: 2px 1px black;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
-
 }
 
-section.imagem {
-    list-style: none;
-    padding: 0;
-}
-
-section.imagem ul li {
-    background-color: var(--cor05);
+section.imagem article p.conteudo {
     color: white;
     font-family: var(--fonte6);
     font-size: 1.8em;
     text-align: left;
-    margin-bottom: 80px ;   
-    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
     transition: background-color 0.3s;
 }
 
-section.imagem ul li:hover {
+section.imagem article p.conteudo:hover {
     background-color: var(--cor04);
 }
 
@@ -142,32 +148,16 @@ section.imagem ul li a:hover {
     text-decoration: underline;
 }
 
-article p {
-
-    background-color: var(--cor05);
-    color: var(--cor01);
-    font-family: var(--fonte6);
-    font-size: 1.8em;
-    text-align: center;
-    margin: 10px 0px 0px 0px;
-    padding: 20px;
-
-}
-
-/*Roda Pé*/
 footer {
     background-color: var(--cor06);
     padding: 10px;
     text-align: center;
-    
 }
 
 footer > p {
-
     font-family: var(--fonte6);
     font-size: 1.5em;
     color: var(--cor01);
-    
 }
 
 footer > p > a {

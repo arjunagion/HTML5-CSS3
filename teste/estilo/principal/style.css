@@ -34,32 +34,30 @@ body {
     min-height: 100vh;
 }
 
-/* Cabeçalho */
 header {
     background-color: var(--cor05);
-    background-image: url(../imagens/capa\ quimica.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../imagens/capa.png);
+    background-size: 800px;
+    background-position: top center;
+    background-attachment: fixed;
     color: var(--cor01);
     padding: 80px 20px;
     text-align: center;
-    text-shadow: 4px 1px 0px black;
+    text-shadow: 5px 1px 0px black;
 }
 
 header > h1 {
     font-family: var(--fonte2);
-    font-size: 8vw;
+    font-size: 4.8vw;
 }
 
-/* Navegação */
 nav {
     background-color: var(--cor01);
     padding: 20px;
-    text-align: center;
+    text-align: left;
     font-family: var(--fonte2);
-    font-size: 1.3em;
+    font-size: 1.8em;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav > a {
@@ -69,6 +67,7 @@ nav > a {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 nav > a:hover {
@@ -77,51 +76,66 @@ nav > a:hover {
     border-radius: 5px;
 }
 
-/* Bloco explicativo */
 section > p {
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-family: var(--fonte6);
     color: white;
     background-color: var(--cor06);
     padding: 40px 20px;
     text-align: center;
+    box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.377);
 }
 
-/* Seção de tópicos */
-section.imagem {
+article > h3 {
+    text-align: left;
+    font-size: 3em;
+    font-family: var(--fonte6);
+    color: var(--cor01);
+    background-color: var(--cor04);
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+p.conteudo {
+    text-align: left;
+    font-size: 1.8em;
+    font-family: var(--fonte6);
+    color: white;
+    background-color: var(--cor06);
     padding: 40px 20px;
+    transition: background-color 0.3s;
+}
+
+section.imagem {
+    padding: 40px 20px 350px 20px;
+    background-image: url(../imagens/section.png);
+    background-size: 300px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 
 section.imagem h2 {
-    font-size: 2.5em;
+    font-size: 4em;
     font-family: var(--fonte2);
     background-color: var(--cor01);
     color: var(--cor06);
     padding: 20px;
     text-align: center;
     text-shadow: 2px 1px black;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
 }
 
-section.imagem ul {
-    list-style: none;
-    padding: 0;
-}
-
-section.imagem ul li {
-    background-color: var(--cor05);
-    color: var(--cor01);
+section.imagem article p.conteudo {
+    color: white;
     font-family: var(--fonte6);
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.8em;
+    text-align: left;
     margin: 10px 0;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     transition: background-color 0.3s;
 }
 
-section.imagem ul li:hover {
+section.imagem article p.conteudo:hover {
     background-color: var(--cor04);
 }
 
@@ -134,16 +148,19 @@ section.imagem ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para futuros blocos (se usar divs ou outras seções) */
-div {
-    display: inline-block;
-    padding: 130px;
+footer {
+    background-color: var(--cor06);
+    padding: 10px;
     text-align: center;
 }
 
-div > a {
+footer > p {
     font-family: var(--fonte6);
-    font-size: 2em;
+    font-size: 1.5em;
+    color: var(--cor01);
+}
+
+footer > p > a {
     color: var(--cor01);
     text-decoration: none;
 }
