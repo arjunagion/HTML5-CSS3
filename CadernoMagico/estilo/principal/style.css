@@ -37,7 +37,7 @@ body {
 /* Cabeçalho */
 header {
     background-color: var(--cor05);
-    background-image: url(../imagens/capa\ quimica.png);
+    background-image: url(../imagens/capa.png);
     background-size: 400px;
     background-position: right bottom;
     background-attachment: fixed;
@@ -45,6 +45,7 @@ header {
     padding: 80px 20px;
     text-align: center;
     text-shadow: 5px 1px 0px black;
+
 }
 
 header > h1 {
@@ -93,8 +94,8 @@ section > p {
 section.imagem {
     padding: 40px 20px;
     padding-bottom: 300px;
-    background-image: url(../imagens/capa02.png);
-    background-size: 400px;
+    background-image: url(../imagens/section.png);
+    background-size: 300px;
     background-position: right bottom;
     background-repeat: no-repeat;
 }
