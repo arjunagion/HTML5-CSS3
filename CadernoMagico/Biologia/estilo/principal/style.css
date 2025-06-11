@@ -117,12 +117,24 @@ section.imagem ul {
     padding: 0;
 }
 
+section.imagem article ul li {
+    background-color: var(--cor05);
+    color: white;
+    font-family: var(--fonte6);
+    font-size: 0.8em;
+    text-align: left;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
 section.imagem ul li {
     background-color: var(--cor05);
-    color: var(--cor01);
+    color: white;
     font-family: var(--fonte6);
-    font-size: 1.8em;
-    text-align: center;
+    font-size: 0.8em;
+    text-align: left;
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
@@ -140,6 +152,36 @@ section.imagem ul li a {
 
 section.imagem ul li a:hover {
     text-decoration: underline;
+}
+
+section.imagem article {
+
+    background-color: var(--cor06);
+    color: var(--cor01);
+    font-family: var(--fonte6);
+    font-size: 2em ;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+
+
+}
+
+section.imagem {
+
+    background-color: var(--cor06);
+    color: var(--cor01);
+    font-family: var(--fonte6);
+    font-size: 2em ;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+
+
 }
 
 /*Roda Pé*/
