@@ -36,9 +36,9 @@ body {
 
 header {
     background-color: var(--cor05);
-    background-image: url(../imagens/capa.png);
-    background-size: 800px;
-    background-position: top center;
+    background-image: url(../estilo/imagem/capa4.png);
+    background-size: 2000px;
+    background-position: center center;
     background-attachment: fixed;
     color: var(--cor01);
     padding: 80px 20px;
@@ -49,6 +49,8 @@ header {
 header > h1 {
     font-family: var(--fonte2);
     font-size: 4.8vw;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 30px;
 }
 
 nav {
@@ -107,8 +109,8 @@ p.conteudo {
 }
 
 section.imagem {
-    padding: 40px 20px 350px 20px;
-    background-image: url(../imagens/section.png);
+    padding: 40px 20px 400px 20px;
+    background-image: url(../estilo/imagem/section4.png);
     background-size: 300px;
     background-position: right bottom;
     background-repeat: no-repeat;
