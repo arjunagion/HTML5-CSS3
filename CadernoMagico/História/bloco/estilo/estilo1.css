@@ -113,6 +113,7 @@ p.conteudo {
 article > p.conteudo > strong {
     
     text-align: right;
+    font-weight: lighter;
     font-size: 1.4em;
     font-family: var(--fonte6);
     padding: 0px 100px 0px 10px;
@@ -166,7 +167,7 @@ section.imagem h2 {
     font-family: var(--fonte2);
     background-color: var(--cor01);
     color: var(--cor06);
-    padding: 20px;
+    padding: 100px;
     text-align: center;
     text-shadow: 2px 1px black;
 }
