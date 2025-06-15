@@ -106,9 +106,10 @@ header {
 }
 
 header.capa {
-    background-image: url(../imagens/capa.png);
+    background-image: url(../imagens/capa\ quimica.png);
     background-position: top center;
     background-size: 500px;
+    background-attachment: fixed;
 }
 
 main {

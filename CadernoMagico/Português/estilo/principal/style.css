@@ -109,6 +109,7 @@ header.capa {
     background-image: url(../imagens/capa.png);
     background-position: center center;
     background-size: 2500px;
+    background-attachment: fixed;
 }
 
 main {
