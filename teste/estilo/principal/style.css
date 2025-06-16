@@ -164,3 +164,17 @@ footer > p > a {
     color: var(--cor01);
     text-decoration: none;
 }
+li {
+    transition: all 0.3s; /* suaviza efeitos */
+}
+a.menu {
+    display: block;
+    padding: 20px;
+    transition: all 0.3s;
+}
+a.menu:hover {
+    background: var(--cor04);
+}
+li:hover {
+    transform: scale(1.01);
+}

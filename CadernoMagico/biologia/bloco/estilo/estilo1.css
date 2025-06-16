@@ -18,6 +18,12 @@
     --cor05: #6C299E;
     --cor06: #44265C;
 
+    /*cor dos marca texto*/
+    --cort2: #2abd0d;
+    --cort3: #ff00d4
+;
+     
+
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --destaque: "Passero One", sans-serif;
     --topico: "Lobster", sans-serif;
@@ -83,8 +89,8 @@ strong.t3 {
 
 
 a.navegador:hover {
-    background-color: var(--cor06);
-    color: var(--cor01);
+    background-color: var(--cor01);
+    color: var(--cor06);
     border-radius: 5px;
 }
 
@@ -99,11 +105,11 @@ p strong.t1:hover {
 }
 
 p strong.t2:hover {
-    background-color: rgb(0, 128, 107);
+    background-color: var(--cort2);
 }
 
 p strong.t3:hover {
-    background-color: var(--cor04);
+    background-color: var(--cort3);
 }
 
 p.conteudo:hover {
@@ -133,7 +139,9 @@ header {
     background-color: var(--cor05);
     background-image: linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562));
     padding: 100px;
-    background-image: url(../imagens/capa.png);
+    background-image: url(../estilo/imagem/capa1.png);
+    background-size: 550px;
+    background-position: bottom center;
     background-attachment: fixed;
 }
 
@@ -144,8 +152,12 @@ main {
 
 
 nav {
-    background-color: var(--cor01);
+    background-color: var(--cor06);
     padding: 30px;
+    margin-bottom:  10px;
+    border-style: outset;
+    border-color: var(--cor03);
+    border-width: 6px;
 }
 
 a {
@@ -159,7 +171,16 @@ a {
 }
 
 a.navegador {
-    color: var(--cor06);
+    color: var(--cor01);
+    padding: 10px 10px 10px 10px;
+    margin: 5px 10px;
+    font-size: clamp(1.5em, 4vw, 3em);
+    font-family: var(--destaque);
+    text-decoration: none;
+    border-radius: 5px;
+    border-style: outset;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
@@ -172,12 +193,20 @@ article {
     background-color: var(--cor06);
     border-radius: 15px;
     padding: 20px;
-    margin: 10px;
+    margin: 15px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.452);
     border-style: outset;
     border-color: var(--cor03);
     border-width: .3em;
+    min-width: 70vw;
 }
+
+section {
+    margin: 30px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
 
 h1 {
     padding: 10px;
@@ -188,6 +217,9 @@ h1 {
     text-align: center;
     text-shadow: 3px 1px black;
     border-radius: 30px;
+    border-style: outset;
+    border-color: var(--cor06);
+    border-width: 10px;
 }
 
 h2 {
@@ -200,15 +232,18 @@ h2 {
 }
 
 h3 {
-    padding: 20px 0px 20px 40px;
-    font-size: clamp(2em, 5vw, 6em);
-    font-family: var(--topico);
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+    font-size: clamp(2em, 4vw, 5em);
+    font-family: var(--conteudo);
+    font-weight: lighter;
     text-align: left;
     text-shadow: 3px 1px black;
     border-radius: 15px 15px 0px 0px;
     color: var(--cor01);
     background-color: var(--cor04);
     background-image: linear-gradient(to top, var(--cor04), rgba(0, 0, 0, 0.623))
+    
 }
 
 h4 {
@@ -226,7 +261,7 @@ h4 {
 }
 
 p {
-    padding: 30px 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
     background-color: var(--);
     color: white;
     font-family: var(--conteudo);
@@ -234,6 +269,10 @@ p {
     line-height: 2em;
     border-radius: 0px 0px 15px 15px;
     transition: background-color 0.3s, color 0.3s;
+}
+
+p.conteudo {
+    margin: 20px;
 }
 
 p#marcabloco {
@@ -244,26 +283,30 @@ p#marcabloco {
     background-color: var(--cor06);
     color: white;
     box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.377);
-
+    border-style: outset;
+    border-color: var(--cor03);
+    border-width: 5px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 ul {
+    margin: 15px;
     padding: 50px 50px;
     background-color: var(--cor05);
     border-radius: 15px;
     box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.527);
+    min-width: 50vw;
 }
 
 li {
     text-align: left;
     font-family: var(--conteudo);
-    font-size: clamp(.7em, 1vw, 3em);
-    border-radius: 100px;
+    font-size: clamp(1em, 1.5vw, 1.5em);
+    border-radius: 20px;
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 30px 20px;
     background-color: var(--cor06);
-    /*color: white;*/ /*esse <li> contem apenas a tag <a>*/ 
-    padding: 30px 30px 30px 20px;
+    color: var(--cor01);
     list-style-position: inside;
     list-style-type: disc;
     transition: background-color 0.3s, color 0.3s;
@@ -274,7 +317,6 @@ p.rodape {
 }
 
 ul li::marker {
-  font-size: clamp(1.5em, 4vw, 3em);  
   color: var(--cor01);
   
 }
