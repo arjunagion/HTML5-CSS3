@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
 :root {
@@ -36,7 +37,7 @@ header {
 
 h1 {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.897);
     color: var(--cor01);
     font-family: var(--destaque);
     font-size: clamp(2em, 6vw, 7em);
@@ -54,7 +55,8 @@ nav {
     margin-bottom:  10px;
     border-style: outset;
     border-color: var(--cor03);
-    border-width: 6px;
+    border-width: 6px 0px 6px 0px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 a.navegador {
@@ -70,6 +72,9 @@ a.navegador {
 }
 
 a.menu {
+    display: inline-block; /* Mantém o fluxo inline mas permite dimensionamento */
+    width: 95%; /* Ocupa toda a largura do li PAI */
+    box-sizing: border-box; /* Inclui padding na largura total */
     color: var(--cor01);
     padding: 10px 20px 10px 10px;
     font-size: clamp(1.5em, 4vw, 3em);
@@ -150,7 +155,8 @@ li {
 
 article ul li:hover {
     background-color: var(--cor04);
-    transform: translateY(-2px); /* leve levantada */
+    transform: translateY(-5px); /* Efeito mais pronunciado */
+    z-index: 1; /* Garante elevação sobre elementos adjacentes */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra */
 }
 

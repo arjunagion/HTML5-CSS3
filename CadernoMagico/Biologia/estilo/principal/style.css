@@ -92,7 +92,7 @@ p#marcabloco {
     text-align: center;
     background-color: var(--cor06);
     color: white;
-    box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.377);
+    box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.349);
     border-style: outset;
     border-color: var(--cor03);
     border-width: 5px;
