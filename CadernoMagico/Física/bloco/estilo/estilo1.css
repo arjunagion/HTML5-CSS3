@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
 /* ============================================ 
-   # IMPORTAÇÕES DE FONTES
+   # FONTES EXTERNAS
    ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 /* ============================================ 
-   # VARIÁVEIS GLOBAIS E RESET
+   # RESET E VARIÁVEIS GLOBAIS
    ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-    /* Cores Principais */
+    /* Paleta de Cores Principal */
     --cor01: #fffb00; /* Amarelo base */
     --cor02: #afb132; /* Verde-amarelado */
     --cor03: #6b6510; /* Marrom escuro */
@@ -19,21 +24,15 @@
     --cor05: #6C299E; /* Roxo médio */
     --cor06: #44265C; /* Roxo escuro */
     
-    /* Cores para Destaques */
-    --cort2: #2abd0d; /* Verde para hover */
-    --cort3: #ff00d4; /* Rosa para hover */
+    /* Cores para Destaques de Texto */
+    --cort2: #2abd0d;  /* Verde para hover */
+    --cort3: #ff00d4;  /* Rosa para hover */
     
     /* Tipografia */
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --destaque: "Passero One", sans-serif; /* Para títulos principais */
-    --topico: "Lobster", sans-serif;      /* Para títulos secundários */
-    --conteudo: "Fugaz One", sans-serif;  /* Para texto corrido */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --destaque: "Passero One", sans-serif;
+    --topico: "Lobster", sans-serif;
+    --conteudo: "Fugaz One", sans-serif;
 }
 
 /* ============================================ 
@@ -42,7 +41,88 @@
 body {
     background-color: var(--cor01);
     font-family: var(--conteudo);
-    line-height: 1.6;
+}
+
+/* ============================================ 
+   # COMPONENTES REUTILIZÁVEIS
+   ============================================ */
+
+/* Destaques de Texto (marca-texto) */
+strong.t1,
+strong.t2,
+strong.t3 {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+strong.t1 {
+    background-color: var(--cor05);
+    color: white;
+    font-size: 1.4em;
+    text-shadow: 1px 1px black;
+}
+
+strong.t2 {
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+}
+
+strong.t3 {
+    background-color: aqua;
+    color: black;
+    margin: 30px;
+}
+
+/* ============================================ 
+   # EFEITOS HOVER
+   ============================================ */
+a.navegador:hover {
+    border-color: var(--cor05);
+    background-color: var(--cor01);
+    color: var(--cor06);
+    border-radius: 5px;
+}
+
+h4.s1:hover {
+    background-color: var(--cor01);
+    color: black;
+}
+
+p strong.t1:hover {
+    background-color: var(--cor01);
+    color: black;
+}
+
+p strong.t2:hover {
+    background-color: var(--cort2);
+}
+
+p strong.t3:hover {
+    background-color: var(--cort3);
+}
+
+p.conteudo:hover {
+    background-color: var(--cor04);
+    border-radius: 0px 0px 15px 15px;
+}
+
+li strong.t1:hover {
+    background-color: var(--cor01);
+    color: black;
+}
+
+li strong.t2:hover {
+    background-color: var(--cor01);
+    color: black;
+}
+
+article ul li:hover {
+    background-color: var(--cor04);
 }
 
 /* ============================================ 
@@ -65,6 +145,7 @@ h1 {
     color: var(--cor01);
     font-family: var(--destaque);
     font-size: clamp(2em, 6vw, 7em);
+    text-align: center;
     text-shadow: 3px 1px black;
     border-radius: 30px;
     border: 10px outset var(--cor06);
@@ -78,14 +159,8 @@ nav {
     padding: 30px;
     margin-bottom: 10px;
     border: 6px outset var(--cor03);
-    border-width: 6px 0;
-    border-radius: 0 0 15px 15px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    border-width: 6px 0px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 a.navegador {
@@ -94,22 +169,18 @@ a.navegador {
     margin: 5px 10px;
     font-size: clamp(1.5em, 4vw, 3em);
     font-family: var(--destaque);
+    text-decoration: none;
     border-radius: 5px;
     border: outset var(--cor01);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-a.navegador:hover {
-    border-color: var(--cor05);
-    background-color: var(--cor01);
-    color: var(--cor06);
+    transition: all 0.3s ease;
 }
 
 /* ============================================ 
    # CONTEÚDO PRINCIPAL
    ============================================ */
 main {
-    padding: 0 50px;
+    padding: 0px 50px;
 }
 
 section {
@@ -123,17 +194,17 @@ p#marcabloco {
     padding: 40px;
     font-size: clamp(2em, 6vw, 4em);
     font-family: var(--topico);
+    text-align: center;
     background-color: var(--cor06);
     color: white;
     box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.377);
     border: 5px outset var(--cor03);
-    border-radius: 0 0 15px 15px;
+    border-radius: 0px 0px 15px 15px;
 }
 
-/* ============================================ 
-   # ARTIGOS E SEÇÕES DE CONTEÚDO
-   ============================================ */
+/* Artigos/Seções */
 article {
+    line-height: 1.6;
     background-color: var(--cor06);
     border-radius: 15px;
     padding: 25px;
@@ -147,6 +218,7 @@ h2 {
     padding: 100px;
     font-size: clamp(2.5em, 6vw, 7em);
     font-family: var(--destaque);
+    text-align: center;
     color: var(--cor06);
     text-shadow: 3px 1px black;
 }
@@ -159,82 +231,109 @@ h3 {
     font-weight: lighter;
     text-align: left;
     text-shadow: 3px 1px black;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0px 0px;
     color: var(--cor01);
     background: linear-gradient(to top, var(--cor04), rgba(0, 0, 0, 0.623));
 }
 
-/* ============================================ 
-   # ELEMENTOS DE TEXTO
-   ============================================ */
-p.conteudo {
+/* Títulos Nível 4 */
+h4, h4.s1 {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--cor05);
+    color: white;
+    font-family: var(--conteudo);
+    font-size: clamp(1.5em, 4vw, 3em);
+    font-weight: lighter;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+h4.s1 {
+    border-width: 10px;
+    border-style: solid;
+    width: 50vw;
+    background-color: var(--cor05);
+    box-sizing: border-box;
+    font-weight: lighter;
+}
+
+article h5 {
+    margin-top: 70px;
+    font-weight: lighter;
+    font-size: 3em;
+    color: var(--cor01);
+    text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.493);
+}
+
+
+/* Parágrafos */
+p {
+    text-align: left;
     padding: 20px 30px;
     color: white;
     font-size: clamp(.7em, 4vw, 2em);
     line-height: 2em;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0px 0px 15px 15px;
+    transition: all 0.3s ease;
+}
+
+p.conteudo {
     margin: 20px;
-    transition: all 0.3s ease;
 }
 
-p.conteudo:hover {
-    background-color: var(--cor04);
-}
-
-/* Destaques de Texto */
-strong.t1, strong.t2 {
-    display: inline-block;
-    margin: 10px;
-    vertical-align: middle;
-    padding: 10px;
-    border-radius: 30px;
-    font-weight: lighter;
-    transition: all 0.3s ease;
-}
-
-strong.t1 {
+/* Listas */
+ul {
+    margin: 15px;
+    padding: 30px;
     background-color: var(--cor05);
-    color: white;
-    text-shadow: 1px 1px black;
-    font-size: 1.4em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.527);
+    min-width: 50vw;
 }
 
-strong.t2 {
-    background-color: rgba(0, 0, 0, 0.664);
-    color: white;
+li {
+    text-align: left;
+    font-family: var(--conteudo);
+    font-size: clamp(1em, 1.5vw, 1.5em);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--cor06);
+    color: var(--cor01);
+    list-style-position: inside;
+    list-style-type: disc;
+    transition: all 0.3s ease;
 }
 
-/* Efeitos Hover para Destaques */
-p strong.t1:hover {
-    background-color: var(--cor01);
-    color: black;
-}
-
-p strong.t2:hover {
-    background-color: var(--cort2);
+ul li::marker {
+    color: var(--cor01);
 }
 
 /* ============================================ 
    # RODAPÉ
    ============================================ */
 footer {
-    
     background-color: var(--cor06);
     padding: 20px;
     margin-top: 200px;
-    text-align: center;
-    border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0px 0px;
     border: 5px outset var(--cor03);
 }
 
 p.rodape {
+    text-align: center;
     padding: 2px;
     font-family: var(--destaque);
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--cor01);
 }
 
 a.footer {
     color: var(--cor01);
     font-size: 1em;
+    text-decoration: none;
 }
+

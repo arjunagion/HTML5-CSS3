@@ -315,7 +315,7 @@ footer {
 p.rodape {
     padding: 2px;
     font-family: var(--destaque);
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--cor01);
 }
 
