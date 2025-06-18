@@ -132,7 +132,7 @@ header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(imagens/capa.png);
+    url(../estilo/imagem/capa1.png);
     background-size: 700px;
     background-position: center center;
     background-attachment: fixed;
@@ -261,7 +261,6 @@ h4.s1 {
 }
 
 article h5 {
-    margin-top: 70px;
     font-weight: lighter;
     font-size: 3em;
     color: var(--cor01);
@@ -336,4 +335,3 @@ a.footer {
     font-size: 1em;
     text-decoration: none;
 }
-
