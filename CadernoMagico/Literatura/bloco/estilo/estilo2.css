@@ -132,7 +132,7 @@ header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(../estilo/imagem/capa1.png);
+    url(imagens/capa.png);
     background-size: 700px;
     background-position: center center;
     background-attachment: fixed;

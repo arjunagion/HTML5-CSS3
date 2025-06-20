@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caderno de Matemática</title>
+  <link rel="stylesheet" href="../bloco/estilo/estilo3.css">
+</head>
+<body>
+
+    <header class="capa">
+        <h1 class="cabeçalho">Matemática do Ensino Médio - Parte 1 (1º ano EM)</h1>
+    </header>
+
+    <nav>
+     <a href="../../index.html" class="navegador">Início</a>
+     <a href="../matematica.html" class="navegador">tópicos</a>
+    </nav>
+
+    <section>
+        <p id="marcabloco"> Bloco - 03</p>
+        <h2>Geometria e Trigonometria</h2>
+    </section>
+
+    <main>
+      <article>
+        <h3>Função do 2º Grau</h3>
+        
+        <h4 class="s1">Conceitos Fundamentais</h4>
+        <ul>
+        <li><strong class="t1">Forma geral:</strong> 
+            <strong class="t2">f(x) = ax² + bx + c (a ≠ 0)</strong></li>
+            
+            <li><strong class="t1">Elementos-chave:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Concavidade:</strong>
+                <ul>
+                    <li>a > 0 → parábola côncava para cima (∪)</li>
+                    <li>a < 0 → parábola côncava para baixo (∩)</li>
+                </ul></li>
+                <li><strong class="t2">Raízes:</strong> x = [-b ± √(b²-4ac)]/2a</li>
+                <li><strong class="t2">Vértice:</strong> V = (-b/2a, -Δ/4a)</li>
+            </ul></li>
+            
+            <li><strong class="t1">Exemplo Prático:</strong>
+            <strong class="t2">f(x) = x² - 5x + 6</strong>
+            <ul class="sublist">
+                <li>Raízes: x = 2 e x = 3</li>
+                <li>Vértice: V(2.5, -0.25)</li>
+                <li>Concavidade: para cima</li>
+            </ul></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Análise Gráfica</h4>
+        <ul>
+            <li><strong class="t1">Raízes:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Cálculo:</strong> x=2 e x=3</li>
+                <li><strong class="t2">Significado Geométrico:</strong> Pontos onde a parábola corta o eixo x</li>
+            </ul></li>
+            
+            <li><strong class="t1">Vértice:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Cálculo:</strong> V(2.5, -0.25)</li>
+                <li><strong class="t2">Significado:</strong> Ponto de máximo/mínimo</li>
+            </ul></li>
+            
+            <li><strong class="t1">Eixo de simetria:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Cálculo:</strong> x=2.5</li>
+                <li><strong class="t2">Significado:</strong> Linha vertical que divide a parábola</li>
+            </ul></li>
+            
+            <li><strong class="t1">Aplicação:</strong> 
+            <strong class="t2">Lançamento de projéteis (altura máxima = vértice)</strong></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Problemas Contextualizados</h4>
+        <ul>
+            <li><strong class="t1">Modelo de resolução:</strong>
+            <ul class="sublist">
+                <li>Identificar variáveis</li>
+                <li>Montar função quadrática</li>
+                <li>Encontrar vértice/raízes</li>
+                <li>Interpretar resultados</li>
+            </ul></li>
+            
+            <li><strong class="t1">Exemplo:</strong>
+            <strong class="t2">"Um jardim retangular tem 100m de cerca. Qual dimensão maximiza a área?"</strong>
+            <ul class="sublist">
+                <li>Solução: x(50-x) → Área máxima em x=25m (625m²)</li>
+            </ul></li>
+        </ul>
+    </article>
+
+    <section>
+        <h2>Progressões</h2>
+    </section>
+
+    <article>
+        <h4 class="s1">Progressão Aritmética (PA)</h4>
+        <ul>
+            <li><strong class="t1">Definição:</strong> 
+            <strong class="t2">Sequência com diferença constante (r)</strong></li>
+            
+            <li><strong class="t1">Termo geral:</strong> 
+            <strong class="t2">aₙ = a₁ + (n-1)r</strong></li>
+            
+            <li><strong class="t1">Soma dos termos:</strong> 
+            <strong class="t2">Sₙ = n(a₁+aₙ)/2</strong></li>
+            
+            <li><strong class="t1">Exemplo:</strong>
+            <strong class="t2">3, 7, 11, 15... (r=4)</strong>
+            <ul class="sublist">
+                <li>10º termo: a₁₀ = 3 + 9×4 = 39</li>
+                <li>Soma dos 10 termos: S₁₀ = 10(3+39)/2 = 210</li>
+            </ul></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Progressão Geométrica (PG)</h4>
+        <ul>
+            <li><strong class="t1">Definição:</strong> 
+            <strong class="t2">Sequência com razão constante (q)</strong></li>
+            
+            <li><strong class="t1">Termo geral:</strong> 
+            <strong class="t2">aₙ = a₁×qⁿ⁻¹</strong></li>
+            
+            <li><strong class="t1">Soma dos termos:</strong> 
+            <strong class="t2">Sₙ = a₁(qⁿ-1)/(q-1)</strong></li>
+            
+            <li><strong class="t1">Exemplo:</strong>
+            <strong class="t2">2, 6, 18, 54... (q=3)</strong>
+            <ul class="sublist">
+                <li>5º termo: a₅ = 2×3⁴ = 162</li>
+                <li>Soma dos 5 termos: S₅ = 2(3⁵-1)/2 = 242</li>
+            </ul></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Comparativo PA vs PG</h4>
+        <ul>
+            <li><strong class="t1">Variação:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">PA:</strong> Linear (soma)</li>
+                <li><strong class="t2">PG:</strong> Exponencial (produto)</li>
+            </ul></li>
+            
+            <li><strong class="t1">Aplicação:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">PA:</strong> Finanças simples</li>
+                <li><strong class="t2">PG:</strong> Juros compostos</li>
+            </ul></li>
+            
+            <li><strong class="t1">Gráfico:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">PA:</strong> Reta</li>
+                <li><strong class="t2">PG:</strong> Curva exponencial</li>
+            </ul></li>
+            
+            <li><strong class="t1">Dado real:</strong> 
+            <strong class="t2">Mensalidade escolar com reajuste anual de 5% é uma PG</strong></li>
+        </ul>
+    </article>
+
+    <section>
+        <h2>Conjuntos e Lógica</h2>
+    </section>
+
+    <article>
+        <h4 class="s1">Teoria de Conjuntos</h4>
+        <ul>
+            <li><strong class="t1">Notações:</strong>
+            <ul class="sublist">
+                <li>∈ (pertence)</li>
+                <li>⊂ (está contido)</li>
+                <li>∪ (união)</li>
+                <li>∩ (interseção)</li>
+            </ul></li>
+            
+            <li><strong class="t1">Diagramas de Venn:</strong> 
+            <strong class="t2">Representação visual</strong></li>
+            
+            <li><strong class="t1">Exemplo:</strong>
+            <strong class="t2">A = {1,2,3}, B = {3,4,5}</strong>
+            <ul class="sublist">
+                <li>A ∪ B = {1,2,3,4,5}</li>
+                <li>A ∩ B = {3}</li>
+            </ul></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Operações Fundamentais</h4>
+        <ul>
+            <li><strong class="t1">União:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Símbolo:</strong> A ∪ B</li>
+                <li><strong class="t2">Exemplo:</strong> {1,2,3} ∪ {3,4} = {1,2,3,4}</li>
+            </ul></li>
+            
+            <li><strong class="t1">Interseção:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Símbolo:</strong> A ∩ B</li>
+                <li><strong class="t2">Exemplo:</strong> {1,2} ∩ {2,3} = {2}</li>
+            </ul></li>
+            
+            <li><strong class="t1">Diferença:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Símbolo:</strong> A - B</li>
+                <li><strong class="t2">Exemplo:</strong> {1,2,3} - {2} = {1,3}</li>
+            </ul></li>
+            
+            <li><strong class="t1">Aplicação:</strong> 
+            <strong class="t2">Pesquisas de opinião (grupos que usam dois produtos)</strong></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Lógica Matemática</h4>
+        <ul>
+            <li><strong class="t1">Proposições:</strong> 
+            <strong class="t2">Declarações verdadeiras ou falsas</strong></li>
+            
+            <li><strong class="t1">Conectivos:</strong>
+            <ul class="sublist">
+                <li>∧ (e)</li>
+                <li>∨ (ou)</li>
+                <li>→ (se...então)</li>
+            </ul></li>
+            
+            <li><strong class="t1">Tabela-verdade:</strong>
+            <ul class="sublist">
+                <li>p | q | p∧q | p∨q | p→q</li>
+                <li>V | V | V | V | V</li>
+                <li>V | F | F | V | F</li>
+                <li>F | V | F | V | V</li>
+                <li>F | F | F | F | V</li>
+            </ul></li>
+            
+            <li><strong class="t1">Exercício:</strong> 
+            <strong class="t2">"Se estudo (p) então passo no teste (q)" - quando é falsa?</strong></li>
+        </ul>
+    </article>
+
+    <section>
+        <h2>Estatística Básica</h2>
+    </section>
+
+    <article>
+        <h4 class="s1">Medidas de Tendência Central</h4>
+        <ul>
+            <li><strong class="t1">Média:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Cálculo:</strong> Soma/n</li>
+                <li><strong class="t2">Vantagem:</strong> Usa todos dados</li>
+                <li><strong class="t2">Exemplo:</strong> 5,7,9 → 7</li>
+            </ul></li>
+            
+            <li><strong class="t1">Mediana:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Cálculo:</strong> Valor central</li>
+                <li><strong class="t2">Vantagem:</strong> Resistente a extremos</li>
+                <li><strong class="t2">Exemplo:</strong> 3,5,9,10 → 7</li>
+            </ul></li>
+            
+            <li><strong class="t1">Moda:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Cálculo:</strong> Valor mais frequente</li>
+                <li><strong class="t2">Vantagem:</strong> Útil para dados qualitativos</li>
+                <li><strong class="t2">Exemplo:</strong> 2,3,3,5 → 3</li>
+            </ul></li>
+            
+            <li><strong class="t1">Cuidado:</strong> 
+            <strong class="t3">Média sensível a outliers (salários em uma empresa)</strong></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Gráficos Estatísticos</h4>
+        <ul>
+            <li><strong class="t1">Barras:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Uso:</strong> Comparar categorias</li>
+                <li><strong class="t2">Vantagem:</strong> Visual simples</li>
+                <li><strong class="t2">Exemplo:</strong> Vendas por produto</li>
+            </ul></li>
+            
+            <li><strong class="t1">Setores:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Uso:</strong> Proporções</li>
+                <li><strong class="t2">Vantagem:</strong> Parte-todo</li>
+                <li><strong class="t2">Exemplo:</strong> Orçamento familiar</li>
+            </ul></li>
+            
+            <li><strong class="t1">Linhas:</strong>
+            <ul class="sublist">
+                <li><strong class="t2">Uso:</strong> Séries temporais</li>
+                <li><strong class="t2">Vantagem:</strong> Mostra tendências</li>
+                <li><strong class="t2">Exemplo:</strong> Temperatura anual</li>
+            </ul></li>
+            
+            <li><strong class="t1">Análise crítica:</strong> 
+            <strong class="t3">Escala dos eixos pode distorcer percepção</strong></li>
+        </ul>
+    </article>
+
+    <article>
+        <h4 class="s1">Exercício Integrado</h4>
+        <ul>
+            <li><strong class="t1">Dados:</strong> 
+            <strong class="t2">Notas da turma (5, 6, 6, 7, 7, 7, 8, 9)</strong></li>
+            
+            <li><strong class="t1">Média:</strong> 
+            <strong class="t2">6,625</strong></li>
+            
+            <li><strong class="t1">Mediana:</strong> 
+            <strong class="t2">7</strong></li>
+            
+            <li><strong class="t1">Moda:</strong> 
+            <strong class="t2">7</strong></li>
+            
+            <li><strong class="t1">Atividade:</strong> 
+            <strong class="t2">Construir gráfico de barras</strong></li>
+        </ul>
+    </article>
+    </main>
+          
+  <footer>
+    <p class="rodape">site criado por <a href="" class="footer">Arjuna M. Giom</a>.</p>
+  </footer>
+
+</body>
+</html>

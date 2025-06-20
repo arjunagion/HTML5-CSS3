@@ -121,6 +121,10 @@ li strong.t2:hover {
     color: black;
 }
 
+li strong.t3:hover {
+    background-color: var(--cort3);
+}
+
 article ul li:hover {
     background-color: var(--cor04);
 }
@@ -132,8 +136,8 @@ header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(imagens/capa.png);
-    background-size: 700px;
+    url(imagens/capa1.png);
+    background-size: 300px;
     background-position: center center;
     background-attachment: fixed;
     padding: 100px;
