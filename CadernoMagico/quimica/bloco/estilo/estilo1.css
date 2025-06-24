@@ -132,14 +132,12 @@ article ul li:hover {
 /* ============================================ 
    # CABEÇALHO
    ============================================ */
-
-
 header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(imagens/capa.png);
-    background-size: 2500px;
+    url(imagens/capa\ quimica.png);
+    background-size: 700px;
     background-position: center center;
     background-attachment: fixed;
     padding: 100px;
@@ -182,8 +180,6 @@ a.navegador {
     transition: all 0.3s ease;
 }
 
-
-
 /* ============================================ 
    # CONTEÚDO PRINCIPAL
    ============================================ */
@@ -197,18 +193,6 @@ section {
     text-align: center;
 }
 
-section.imagem {
-    width: 60vw;
-    height: 700px;
-    background-color: transparent;
-    background-image: url(imagens/bloco2/exemplo.png);
-    background-size: 60vw;
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin: 0 auto; /* para centralizar */
-    margin-top: 20px;
-}
-
 /* Bloco de Identificação */
 p#marcabloco {
     padding: 40px;
@@ -220,6 +204,19 @@ p#marcabloco {
     box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.377);
     border: 5px outset var(--cor03);
     border-radius: 0px 0px 15px 15px;
+}
+
+section.imagem {
+
+    width: 60w;
+    height: 400px; /* ou qualquer altura que você precise */
+    background-color: transparent;
+    background-image: url(imagens/bloco1/estados\ fisicos\ da\ materia.png);
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto; /* para centralizar */
+    margin-top: 20px;
 }
 
 /* Artigos/Seções */

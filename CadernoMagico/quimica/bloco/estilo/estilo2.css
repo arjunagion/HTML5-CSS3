@@ -132,14 +132,12 @@ article ul li:hover {
 /* ============================================ 
    # CABEÇALHO
    ============================================ */
-
-
 header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(imagens/capa.png);
-    background-size: 2500px;
+    url(imagens/capa\ quimica.png);
+    background-size: 700px;
     background-position: center center;
     background-attachment: fixed;
     padding: 100px;

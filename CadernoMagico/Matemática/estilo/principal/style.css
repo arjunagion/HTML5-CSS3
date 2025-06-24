@@ -24,6 +24,8 @@
 
 body {
     background-color: var(--cor01);
+    background-image: url(../imagens/corpo.png);
+    background-size: 2800px;
     min-height: 100vh;
     box-sizing: border-box;
 }

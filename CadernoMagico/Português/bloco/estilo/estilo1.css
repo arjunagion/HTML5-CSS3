@@ -132,12 +132,14 @@ article ul li:hover {
 /* ============================================ 
    # CABEÇALHO
    ============================================ */
+
+
 header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(imagens/capa1.png);
-    background-size: 300px;
+    url(imagens/capa.png);
+    background-size: 2500px;
     background-position: center center;
     background-attachment: fixed;
     padding: 100px;
@@ -210,7 +212,7 @@ section#grafico {
 
     width: 50vw;
     height: 750px; /* ou qualquer altura que você precise */
-    background-color: #2abd0d;
+    background-color: transparent;
     background-image: url(imagens/bloco1/grafico.png);
     background-size: 60vw;
     background-repeat: no-repeat;

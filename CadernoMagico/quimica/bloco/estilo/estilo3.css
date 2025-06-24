@@ -132,14 +132,12 @@ article ul li:hover {
 /* ============================================ 
    # CABEÇALHO
    ============================================ */
-
-
 header {
     background-color: var(--cor05);
     background-image: 
     linear-gradient(to top, var(--cor05), rgba(0, 0, 0, 0.562)),
-    url(imagens/capa.png);
-    background-size: 2500px;
+    url(imagens/capa\ quimica.png);
+    background-size: 700px;
     background-position: center center;
     background-attachment: fixed;
     padding: 100px;
@@ -182,8 +180,6 @@ a.navegador {
     transition: all 0.3s ease;
 }
 
-
-
 /* ============================================ 
    # CONTEÚDO PRINCIPAL
    ============================================ */
@@ -195,18 +191,6 @@ section {
     margin: 30px;
     padding: 20px 30px;
     text-align: center;
-}
-
-section.imagem {
-    width: 60vw;
-    height: 700px;
-    background-color: transparent;
-    background-image: url(imagens/bloco2/exemplo.png);
-    background-size: 60vw;
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin: 0 auto; /* para centralizar */
-    margin-top: 20px;
 }
 
 /* Bloco de Identificação */
